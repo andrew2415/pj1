@@ -396,6 +396,39 @@ main {
   text-decoration: underline;
 }
 
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(12, 21, 35, 0.303);
+}
+
+.modal--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.modal__wrapper {
+  display: flex;
+  width: 65%;
+  height: 80%;
+  align-items: center;
+  background-color: white;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.modal__wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 996px) {
   .container {
     padding: 0 20px 0 20px;
